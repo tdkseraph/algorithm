@@ -26,12 +26,14 @@ def isPalindrome(x: int) -> bool:
 
     return True
 
-#Second Solution
+
+# Second Solution
 def isPalindrome1(self, x):
     if x < 0 or (x > 0 and x % 10 == 0):
         return False
 
     return x == self.reverseUtil(x)
+
 
 def reverseUtil(self, x):
     result = 0
@@ -44,8 +46,8 @@ def reverseUtil(self, x):
     return result
 
 
-#Third Solution
-def isPalindrome(self, x):
+# Third Solution
+def isPalindrome3(self, x):
     if x < 0:
         return False
     else:
