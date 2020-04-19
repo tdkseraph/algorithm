@@ -6,7 +6,7 @@
 from typing import List
 
 
-def sortArrayZeroOneTwo(arr : List[int]):
+def sortArrayZeroOneTwo(arr: List[int]):
     start = 0
     mid = 0
     end = len(arr) - 1
