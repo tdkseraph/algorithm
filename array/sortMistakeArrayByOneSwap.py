@@ -23,4 +23,8 @@ def sortArrayByOneSwap(arr: List[int]):
 
 
 array = [3, 8, 6, 7, 5, 9]
+array1 = [3, 5, 6, 9, 8, 7]
+array2 = [3, 5, 7, 6, 8, 9]
 sortArrayByOneSwap(array)
+sortArrayByOneSwap(array1)
+sortArrayByOneSwap(array2)
