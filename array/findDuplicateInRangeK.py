@@ -6,7 +6,7 @@
 # Output: Duplicates found (element 6 is repeated at distance 4 which is <= k)
 
 # A[] = { 5, 6, 8, 2, 4, 6, 9 } k = 2
-# Output: No Duplicates found (element 6 is repeated at distance 4 which is > k)
+# Output: No Duplicates found
 
 # A[] = { 1, 2, 3, 2, 1 } k = 7
 # Output: Duplicates found (element 1 and 2 is repeated at distance 4 and 2 respectively which are both <= k)

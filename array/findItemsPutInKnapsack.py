@@ -4,7 +4,8 @@
 # a collection so that the total weight is less than or equal to a given limit
 # and the total value is as large as possible.
 # Input:
-# value = [ 20, 5, 10, 40, 15, 25 ] weight = [ 1, 2, 3, 8, 7, 4 ] W = 10
+# value = [ 20, 5, 10, 40, 15, 25 ]
+# weight = [ 1, 2, 3, 8, 7, 4 ] W = 10
 # Output: Knapsack value is 60
 # value = 20 + 40 = 60
 # weight = 1 + 8 = 9 < W
@@ -32,10 +33,11 @@ def findItemsPutInKnapsack(valueArr: List[int], weightArr: List[int], target: in
     items = []
     i = len(valueArr)
     j = target
-    while i != 0:
-        if memoArr[i][j] > memoArr[i - 1][j]:
+
+    while i > 0:
+        if memoArr[i][j] != memoArr[i - 1][j]:
             items.append(weightArr[i - 1])
-            j = target - weightArr[i - 1]
+            j = j - weightArr[i - 1]
 
         i -= 1
 

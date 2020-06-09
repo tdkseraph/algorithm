@@ -27,7 +27,7 @@ def findTripletWithGivenSum(arr: List[int], targetSum: int):
                     check += 1
 
                 if check < 3:
-                    print(remain, arr[j], arr[i])
+                    print(arr[i], arr[j], remain)
                     checkArr[arr[j]] = True
                     checkArr[remain] = True
                     checkArr[arr[i]] = True

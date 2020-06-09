@@ -24,6 +24,7 @@ def boyermooreMajorityVote(arr: List[int]):
     for i in range(len(arr)):
         if counter == 0:
             candidate = arr[i]
+            counter = 1
         else:
             if arr[i] == candidate:
                 counter += 1
